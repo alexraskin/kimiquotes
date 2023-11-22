@@ -19,7 +19,7 @@
 ## :computer: Usage
 Make queries to the API using a URI with the following format:
 ```
-https://kimiquotes.herokuapp.com[endpoint]
+https://kimiquotes.pages.dev[endpoint]
 ```
 <p><em>See below for a list of available endpoints</em></p>
 
