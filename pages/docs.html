@@ -23,15 +23,6 @@
         <!-- stylesheets -->
         <link href="stylesheets/styles.css" rel="stylesheet" type="text/css">
         <link href="stylesheets/apidoc.css" rel="stylesheet" type="text/css">
-        <!-- Global site tag -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-152533938-3"></script>
-        <script>
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-
-            gtag('config', 'UA-152533938-3');
-        </script>
     </head>
 
     <body>
@@ -56,30 +47,30 @@
                 <h3 class='subHeading'>Endpoints</h3>
                 <div class='codeSnippet'>
                     <p>GET all quotes</p>
-                    <code>/quotes</code>
+                    <code>/api/quotes</code>
                 </div>
                 <div class='codeSnippet'>
                     <p>GET all quotes from a specified year</p>
-                    <code>/quotes/:year</code>
+                    <code>/api/quotes/:year</code>
                 </div>
                 <div class='codeSnippet'>
                     <p>GET all quotes that don't come with year timestamps</p>
-                    <code>/quotes/unstamped</code>
+                    <code>/api/quotes/unstamped</code>
                 </div>
                 <div class='codeSnippet'>
                     <p>GET a quote using its <abbr>ID</abbr> number</p>
-                    <code>/quote/:id</code>
+                    <code>/api/quote/:id</code>
                 </div>
                 <div class='codeSnippet'>
                     <p>GET a random quote</p>
-                    <code>/quote</code>
+                    <code>/api/quote</code>
                 </div>
             </div>
             <div class='docSection'>
                 <h3 class='subHeading'>Run Locally</h3>
                 <div class='codeSnippet'>
                     <p>Clone the project repo</p>
-                    <code>$ git clone https://github.com/sethvm/kimiquotes.git</code>
+                    <code>$ git clone https://github.com/alexraskin/kimiquotes.git</code>
                 </div>
                 <div class='codeSnippet'>
                     <p>Install the dependencies</p>
@@ -89,7 +80,7 @@
                     </code>
                 </div>
                 <div class='codeSnippet'>
-                    <p>Start development server with hot-reload enabled at localhost:8000</p>
+                    <p>Start development server</p>
                     <code>$ npm run dev</code>
                 </div>
             </div>
