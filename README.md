@@ -17,52 +17,70 @@
 <br />
 
 ## :computer: Usage
+
 Make queries to the API using a URI with the following format:
-```
+
+```bash
 https://kimiquotes.pages.dev[endpoint]
 ```
+
 <p><em>See below for a list of available endpoints</em></p>
 
 ## :zap: Endpoints
+
 GET all quotes
+
+```bash
+/api/quotes
 ```
-/quotes
-```
+
 GET all quotes from a specified year
+
+```bash
+/api/quotes/:year
 ```
-/quotes/:year
-```
+
 GET all quotes that don't come with year timestamps
+
+```bash
+/api/quotes/unstamped
 ```
-/quotes/unstamped
-```
+
 GET a quote using its ID
+
+```bash
+/api/quote/:id
 ```
-/quote/:id
-```
+
 GET a random quote
-```
-/quote
+
+```bash
+/api/quote
 ```
 
 ## :floppy_disk: Run Locally
+
 Clone the project repo
+
+```bash
+git clone https://github.com/alexraskin/kimiquotes.git
 ```
-git clone https://github.com/sethvm/kimiquotes.git
-```
+
 Install the dependencies
-```
+
+```bash
 cd kimiquotes
 npm install
-```
-Start the development server with hot-reload enabled at `localhost:8000`
-```
+
+```bash
 npm run dev
 ```
 
 ## :memo: To-Do
- - Nothing at the moment — quote contributions/updates are welcome!
+
+- Nothing at the moment — quote contributions/updates are welcome!
 
 ## :star2: Potential Improvements
- - Implement `POST`, `PATCH`, and `DELETE` endpoints
- - Categorize quotes (e.g. emotion, team radio, interview, venue)
+
+- Implement `POST`, `PATCH`, and `DELETE` endpoints
+- Categorize quotes (e.g. emotion, team radio, interview, venue)
