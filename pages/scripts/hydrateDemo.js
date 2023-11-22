@@ -12,7 +12,7 @@ tweetBtn.addEventListener('click', tweetQuote);
 
 // fetch functions
 async function renderSampleQuote() {
-    const response = await fetch(`${window.location.href}quote`);
+    const response = await fetch(`${window.location.href}api/quote`);
     const quoteData = await response.json();
 
     if (!quoteData.year) quoteData.year = '';

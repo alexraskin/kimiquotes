@@ -1,54 +1,38 @@
 {
   "name": "kimiquotes",
   "version": "1.0.0",
-  "author": "Seth Morenos <https://sethvm.com>",
-  "email": "sethvm64@gmail.com",
+  "author": "Alex Raskin <https://alexraskin.com>",
+  "email": "root@alexraskin.com",
   "description": "REST API that returns quotes by Finnish F1 legend Kimi Räikkönen",
   "license": "MIT",
-  "main": "index.js",
   "scripts": {
-    "dev": "nodemon index.ts",
-    "build": "npx tsc",
-    "start": "node index.js",
-    "test": "npx jest ./tests --maxWorkers 2",
-    "sass": "sass --watch public:public --style compressed"
+    "dev": "wrangler pages dev --compatibility-date=2023-01-01 ./pages",
+    "deploy": "wrangler pages deploy ./pages",
+    "test": "npx jest ./tests --maxWorkers 2"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/sethvm/kimiquotes.git"
+    "url": "git+https://github.com/alexraskin/kimiquotes.git"
   },
   "keywords": [
     "api",
-    "express",
     "formula1",
-    "node",
     "quotes",
     "rest"
   ],
   "bugs": {
-    "url": "https://github.com/sethvm/kimiquotes/issues"
+    "url": "https://github.com/alexraskin/kimiquotes/issues"
   },
-  "homepage": "https://github.com/sethvm/kimiquotes#readme",
+  "homepage": "https://github.com/alexraskin/kimiquotes#readme",
   "dependencies": {
-    "compression": "^1.7.4",
-    "cors": "^2.8.5",
-    "express": "^4.17.2",
-    "helmet": "^4.6.0"
+    "hono": "^3.10.2"
   },
   "devDependencies": {
-    "@types/compression": "^1.7.2",
-    "@types/express": "^4.17.13",
+    "@cloudflare/workers-types": "^1.20231121.0",
     "@types/jest": "^27.4.0",
-    "@types/node": "^17.0.6",
-    "@types/nodemon": "^1.19.1",
     "jest": "^27.4.5",
-    "nodemon": "^2.0.15",
-    "sass": "^1.45.1",
     "ts-jest": "^27.1.2",
     "ts-node": "^10.4.0",
     "typescript": "^4.5.4"
-  },
-  "engines": {
-    "node": "16.13.0"
   }
 }
